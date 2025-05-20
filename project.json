@@ -2,8 +2,9 @@
   "name": "botdiscord",
   "projectId": "7d8aa555-4fe1-4061-bbbf-538648e32c9c",
   "description": "Processo em Branco",
-  "main": "Main.xaml",
+  "main": "discordAutoBot.xaml",
   "dependencies": {
+    "UiPath.IntegrationService.Activities": "[1.15.0]",
     "UiPath.System.Activities": "[25.4.2]",
     "UiPath.UIAutomation.Activities": "[25.10.2]"
   },
@@ -46,8 +47,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "172567b1-cd97-41fc-bdb7-ba7b35ebac5c",
+      "filePath": "discordAutoBot.xaml",
+      "uniqueId": "f57af0f1-092a-484e-b8e2-091f80d7d9d1",
       "input": [],
       "output": []
     }
