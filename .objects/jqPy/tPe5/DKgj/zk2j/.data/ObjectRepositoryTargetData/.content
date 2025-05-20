@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bjN11ne1mkCAe-ENrVl79A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="e8a3c36f-aa44-491d-a920-5398bd552428" CvType="AnyWordGroup" DesignTimeRectangle="384, 926, 1504, 22" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl id='message-content-1374424596433997875' tag='DIV' type='' class='markup__75297 messageContent_c19a55' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e06aa369-5740-4dbc-9730-5a296656ab70" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="0eee9ec963c3f047363f3ca959a17930.png" xmlns="">0aQ8I_e_40kGLW4ZzIwhDhg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
