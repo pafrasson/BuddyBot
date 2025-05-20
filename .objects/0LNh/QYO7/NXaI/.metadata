@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Bot IA - Poe",
+  "Type": "Screen",
+  "Id": "NXaIiWKh50SqUhzEIYiGPQ",
+  "Reference": "qA2mmF-h5UOuwJmMtkU_yg/NXaIiWKh50SqUhzEIYiGPQ",
+  "ParentRef": "qA2mmF-h5UOuwJmMtkU_yg/QYO7vW94f0ac6nzwEx9-WA",
+  "Created": "2025-05-20T18:24:11.792805Z",
+  "Updated": "2025-05-20T18:24:11.792805Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

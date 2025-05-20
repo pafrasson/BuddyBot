@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="I8oHymE_4keRjx-JdkP-bw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="poe.com/chat/krmsik5i7zryie0naf" CVScreenId="9fa8339c-033f-4fbc-9c85-ad9d3e12df2d" DesignTimeRectangle="763, 960, 702, 23" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" Guid="277ce6b3-bae5-4655-82fe-a78ff13955b9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bot IA - Poe' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="a331d30bb31cdfc147cfec4dff99d92f.png" xmlns="">0AkCl8BCWxUGnsfFbf7izqg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
