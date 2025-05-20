@@ -128,8 +128,9 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1583,1201" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1583,3476" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="respostaIA" />
       <Variable x:TypeArguments="s:String[]" Name="LinhasHorario" />
       <Variable x:TypeArguments="s:String[]" Name="NovaMensagem" />
       <Variable x:TypeArguments="x:String" Name="ultimamsg" />
@@ -139,13 +140,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="552,1178" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap:VirtualizedContainerService.HintSize="552,3453" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Discord Get" sap:VirtualizedContainerService.HintSize="518,197" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence DisplayName="Discord Get" sap:VirtualizedContainerService.HintSize="518,1520" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="messageLog" />
         </Sequence.Variables>
@@ -155,7 +156,7 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="57ad8828-fa71-4c32-81f4-545d8771a306">
+        <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="57ad8828-fa71-4c32-81f4-545d8771a306">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -173,7 +174,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
-        <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="49300552-2226-4d90-8f8a-04981d692371" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+        <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="49300552-2226-4d90-8f8a-04981d692371" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="468,1371" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
           <p:CVScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -188,7 +189,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="400,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" ScopeGuid="f893ba05-b863-45d6-b747-a93e3b2431b2" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="434,446" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" ScopeGuid="f893ba05-b863-45d6-b747-a93e3b2431b2" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -206,14 +207,14 @@
                   </uix:NApplicationCard.TargetApp>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NApplicationCard>
-                <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" ChosenButton="[teste]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="400,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[messageLog]" />
-                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\Aluno\Desktop\Novo(a) Documento de Texto.txt" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[messageLog]" />
-                <Assign sap:VirtualizedContainerService.HintSize="400,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" ChosenButton="[teste]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[messageLog]" />
+                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\Aluno\Desktop\Novo(a) Documento de Texto.txt" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[messageLog]" />
+                <Assign sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:String[]">[NovaMensagem]</OutArgument>
                   </Assign.To>
@@ -227,7 +228,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="400,57" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_2">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[ultimamsg]</OutArgument>
                   </Assign.To>
@@ -241,7 +242,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" ChosenButton="[teste]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="400,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[ultimamsg]" />
+                <ui:MessageBox Caption="{x:Null}" AutoCloseAfter="00:00:00" ChosenButton="[teste]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[ultimamsg]" />
               </Sequence>
             </ActivityAction>
           </p:CVScope.Body>
@@ -388,7 +389,7 @@
               <ActivityFunc.Argument>
                 <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
               </ActivityFunc.Argument>
-              <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+              <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
             </ActivityFunc>
           </p:CVScope.OCREngine>
           <p:CVScope.Target>
@@ -403,25 +404,25 @@
           </p:CVScope.UseLocalServer>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </p:CVScope>
       </Sequence>
-      <Sequence DisplayName="IA Prompt" sap:VirtualizedContainerService.HintSize="518,898" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <Sequence DisplayName="IA Prompt" sap:VirtualizedContainerService.HintSize="518,1850" sap2010:WorkflowViewState.IdRef="Sequence_13">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Bot IA - Poe" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,815" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Bot IA - Poe" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1767" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,575" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,1527" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -454,9 +455,51 @@
                     <uix:TargetAnchorable BrowserURL="poe.com/chat/krmsik5i7zryie0naf" CVScreenId="9fa8339c-033f-4fbc-9c85-ad9d3e12df2d" ContentHash="KlYBdJxST0OuMuObfY9AFw" DesignTimeRectangle="763, 960, 702, 23" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" Guid="7a705640-0c33-41d4-9740-a80b0bca91be" InformativeScreenshot="c0eb71105fe7817168a477ec7761d28a.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/DBXEVgI0VEK2Wy0BWb7M-g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bot IA - Poe' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                   </uix:NSetText.Target>
                 </uix:NSetText>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
                   <ui:SendHotkey.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="079536f3-a7a3-4541-b83b-0455e6668c84" InformativeScreenshot="1052abf17a1af37ccdfd177c7af6abde" Selector="&lt;webctrl tag='TEXTAREA' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                  <ui:WaitUiElementAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="79c831f5-751d-40b3-be49-618bb4e7cc38" InformativeScreenshot="8b155fdd6d271bcc565b6e523619a654" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='message-393444846295' tag='DIV' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitUiElementAppear.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:WaitUiElementAppear>
+                <uix:NGetText DisplayName="Get Text 'Ah, saquei! Você quer c…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" TextString="[respostaIA]" Version="V4">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="poe.com/chat/krmsik5i7zryie0naf" ContentHash="eluSPbsNcUKDvXyzWLEhIA" DesignTimeRectangle="745, -992, 736, 1788" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='message-393444846295' tag='DIV' /&gt;" Guid="85e70bb5-9444-40c5-bab0-d488b79bffb8" InformativeScreenshot="83d3a7b30a7321455a6507c3e82ecf00.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/iHlo0v-6vES7PCZbO_RXMQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bot IA - Poe' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NGetText.Target>
+                </uix:NGetText>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[respostaIA]" />
+                <uix:NSetText DisplayName="Set Text 'TEXTAREA(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Text="[respostaIA]" Version="V4">
+                  <uix:NSetText.Target>
+                    <uix:TargetAnchorable BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="7a6ff256-c9e4-48f5-a9ee-adba4c3947d9" ContentHash="TIMqVlYcbUa5pUnkF3ysuQ" CvTextArea="455, 981, 209, 17" CvTextArgument="Conversar em # 1 amigo-tcs" CvType="Text" DesignTimeRectangle="456, 978, 1259, 22" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;" Guid="11f18c34-ed0f-4670-94dc-fc88e845ce09" InformativeScreenshot="211f60364e15e93dbef61d47fb087d49.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/6YQ5g0XZok-rPk-hMPN1ww" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NSetText.Target>
+                </uix:NSetText>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="89a8b7ae-cdb8-4216-b88f-daf74147bc9d" InformativeScreenshot="45ebccfd5a64fd2e9c7422dc8b5d0ddc" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
