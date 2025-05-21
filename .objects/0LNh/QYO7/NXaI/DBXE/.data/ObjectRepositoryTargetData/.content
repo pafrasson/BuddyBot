@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="pYfRLrHzBkaCocO8p26O4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="TvYeqUz4OUeXE11trZ9-1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/682dcd83-d620-8010-b21c-9c6fa7a92752" CVScreenId="a551ce99-c43f-4118-b468-69fb34b5712c" CvElementArea="709, 902, 777, 109" CvType="InputBox" DesignTimeRectangle="732, 921, 738, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="89bd45e4-06f5-4ff1-bebe-19473cbe9c5e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teste funcionando' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-      <imageRef attrName="InformativeScreenshot" originalValue="a7be13cc537bd8f2afaa7b33936fbc03.png" xmlns="">0f9IdkGwTgE2rnl1aZyaczw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/682e0e0c-9000-8010-a887-e5367ea15d47" CVScreenId="841a671d-4d20-404d-b610-6c49be5d8090" CvElementArea="709, 902, 777, 109" CvType="InputBox" DesignTimeRectangle="732, 921, 738, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="76ae5b9b-1fc8-48fd-9f62-eb2691a8f035" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Resumo de conversa' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="714, 906, 768, 102" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' parentid='thread-bottom' tag='DIV' /&gt;" Guid="4c6e35dd-de8d-4918-a115-3f43e578ad53" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="211b1448b6fbccb4d4dbbd612a192573.png" xmlns="">0LRdClLQ2dkCnEZHIxDqyWw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">SetText</x:String>
   </ObjectRepositoryTargetData.Data>
