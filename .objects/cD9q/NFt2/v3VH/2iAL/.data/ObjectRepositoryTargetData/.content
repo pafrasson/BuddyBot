@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EJIk5nKa5ECoAkinsYNdOg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="440e4ede-b7ac-40e0-95dc-38a7676e937c" CvTextArea="455, 981, 209, 17" CvTextArgument="Conversar em # 1 amigo-tcs" CvType="Text" DesignTimeRectangle="456, 978, 1259, 22" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;" Guid="7561cb6a-bb8e-4ce1-be77-ed3b5967f774" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="4b69c4c704b43583c6054567f1988df8.png" xmlns="">01J6ts6bZtUOl1fc9sWBEgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

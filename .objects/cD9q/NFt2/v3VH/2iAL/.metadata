@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Conversar em #│amigo-tcs",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "2iALMWgIb0SJO7i_TMk2ZA",
+  "Reference": "qA2mmF-h5UOuwJmMtkU_yg/2iALMWgIb0SJO7i_TMk2ZA",
+  "ParentRef": "qA2mmF-h5UOuwJmMtkU_yg/v3VHg-RrukSmh6tbDAJfAQ",
+  "Created": "2025-05-21T12:10:16.5579418Z",
+  "Updated": "2025-05-21T12:10:16.5579418Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

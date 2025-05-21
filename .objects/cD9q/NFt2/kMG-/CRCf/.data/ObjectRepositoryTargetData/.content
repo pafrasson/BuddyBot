@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1ImPsVw9rEiHeFoyidcYAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" DesignTimeRectangle="384, 902, 1528, 48" FullSelectorArgument="&lt;webctrl aria-labelledby='message-username-1374751466656370728 uid_1 message-content-1374751466656370728 uid_2 message-timestamp-1374751466656370728' aria-role='article' tag='DIV' /&gt;" Guid="164309a2-f011-4cea-a2fb-d829c306a0cf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="2254ab8f728cf91ae3818f327aac9bca.png" xmlns="">0fyfDdaxFQUq0vSTfVbd20Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">NativeTrigger</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

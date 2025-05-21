@@ -23,6 +23,17 @@
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "discordAutoBot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "respostaIA&Sequence_1",
+        "LinhasHorario&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }
