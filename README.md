@@ -3,7 +3,7 @@ Bot criado durante o treinamento de RPA(Roboti Process Automation) do estágio d
 
 ## 👾 TECNOLOGIAS ##
 * [UiPath Community Edition] (https://community.uipath.com/)
-![Discord] (https://discord.com/)
+* [Discord] (https://discord.com/)
 
 ## 🔧 FUNCIONALIDADES ##
 * Funcionalidade: Robo criado para reproduzir interações humanas,
