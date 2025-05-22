@@ -97,5 +97,6 @@
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
     </Sequence>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap2010:WorkflowViewState.IdRef="MessageBox_1" />
   </Sequence>
 </Activity>
