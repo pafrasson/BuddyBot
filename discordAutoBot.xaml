@@ -136,13 +136,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1857,6485" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="902,6485" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="vetorRespostasDiscord" />
       <Variable x:TypeArguments="x:String" Name="respostasDiscord" />
       <Variable x:TypeArguments="x:String" Name="respostaIA" />
       <Variable x:TypeArguments="s:String[]" Name="LinhasHorario" />
-      <Variable x:TypeArguments="s:String[]" Name="NovaMensagem" />
+      <Variable x:TypeArguments="x:String" Name="NovaMensagem" />
       <Variable x:TypeArguments="x:String" Default="[ultimamsg]" Name="logResposta" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -150,16 +150,16 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="728,6462" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap:VirtualizedContainerService.HintSize="590,3135" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[ultimamsg &lt;&gt; respostaDS]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="694,6140" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[ultimamsg &lt;&gt; respostaDS]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="590,4056" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
         <ui:InterruptibleDoWhile.Body>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="692,6010" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="588,3958" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="discGetDebug" />
             </Sequence.Variables>
@@ -169,7 +169,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Discord Get" sap:VirtualizedContainerService.HintSize="658,1571" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Discord Get" sap:VirtualizedContainerService.HintSize="554,2015" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="messageLog" />
               </Sequence.Variables>
@@ -179,7 +179,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="57ad8828-fa71-4c32-81f4-545d8771a306">
+              <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="468,304" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="57ad8828-fa71-4c32-81f4-545d8771a306">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -192,18 +192,18 @@
                 </uix:NApplicationCard.TargetApp>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
-              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="19e4adf2-558e-4109-b76a-bf1979c354de" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="468,1422" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="19e4adf2-558e-4109-b76a-bf1979c354de" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="468,1619" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                 <p:CVScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="538,1588" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="608,1582" sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="teste" />
                       </Sequence.Variables>
@@ -265,16 +265,16 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:MessageBox>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_15">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_20">
                         <Assign.To>
-                          <OutArgument x:TypeArguments="s:String[]">[NovaMensagem]</OutArgument>
+                          <OutArgument x:TypeArguments="x:String">[NovaMensagem]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="s:String[]">[LinhasHorario.Last.Split({"]"}, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
+                          <InArgument x:TypeArguments="x:String">[LinhasHorario.Last]</InArgument>
                         </Assign.Value>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -297,10 +297,10 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Novamensagem" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[NovaMensagem.Last]">
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Novamensagem" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="MessageBox_15" Text="[NovaMensagem]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -385,7 +385,7 @@
                                 <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.ultimamsg]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="s:String[]">[NovaMensagem]</InArgument>
+                                <InArgument x:TypeArguments="x:String">[NovaMensagem]</InArgument>
                               </Assign.Value>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -760,7 +760,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </p:CVScope>
             </Sequence>
-            <ui:ReadTextFile File="{x:Null}" Content="[discGetDebug]" DisplayName="Read Text File" FileName="respostasDS.txt" sap:VirtualizedContainerService.HintSize="658,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+            <ui:ReadTextFile File="{x:Null}" Content="[discGetDebug]" DisplayName="Read Text File" FileName="respostasDS.txt" sap:VirtualizedContainerService.HintSize="554,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -768,7 +768,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ReadTextFile>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="discget" sap:VirtualizedContainerService.HintSize="658,57" sap2010:WorkflowViewState.IdRef="MessageBox_11" Text="[discGetDebug]">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="discget" sap:VirtualizedContainerService.HintSize="554,57" sap2010:WorkflowViewState.IdRef="MessageBox_11" Text="[discGetDebug]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -776,7 +776,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="658,57" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="554,57" sap2010:WorkflowViewState.IdRef="CommentOut_27">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_59">
                   <sap:WorkflowViewStateService.ViewState>
@@ -789,7 +789,7 @@
                       <OutArgument x:TypeArguments="x:String">[logResposta]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="s:String[]">[NovaMensagem]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[NovaMensagem]</InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -807,7 +807,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="658,57" sap2010:WorkflowViewState.IdRef="CommentOut_25">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="554,57" sap2010:WorkflowViewState.IdRef="CommentOut_25">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="Sequence_57">
                   <sap:WorkflowViewStateService.ViewState>
@@ -832,7 +832,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <If Condition="[NovaMensagem.Last &lt;&gt; discGetDebug]" sap:VirtualizedContainerService.HintSize="658,4096" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[NovaMensagem &lt;&gt; discGetDebug]" sap:VirtualizedContainerService.HintSize="554,1600" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -840,26 +840,26 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="656,3799" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="552,1303" sap2010:WorkflowViewState.IdRef="Sequence_46">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="IA Prompt" sap:VirtualizedContainerService.HintSize="622,3739" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                  <Sequence DisplayName="IA Prompt" sap:VirtualizedContainerService.HintSize="518,1243" sap2010:WorkflowViewState.IdRef="Sequence_31">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome Bot IA - Poe" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="588,975" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome Bot IA - Poe" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1112" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,726" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,863" sap2010:WorkflowViewState.IdRef="Sequence_36">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -911,7 +911,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <uix:NSetText DisplayName="Set Text 'TEXTAREA(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NSetText_6" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Text="[NovaMensagem.Last]">
+                            <uix:NSetText DisplayName="Set Text 'TEXTAREA(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NSetText_6" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Text="[NovaMensagem]">
                               <uix:NSetText.Target>
                                 <uix:TargetAnchorable BrowserURL="chatgpt.com/c/682e0e0c-9000-8010-a887-e5367ea15d47" CVScreenId="841a671d-4d20-404d-b610-6c49be5d8090" ContentHash="TvYeqUz4OUeXE11trZ9-1A" CvElementArea="709, 902, 777, 109" CvType="InputBox" DesignTimeRectangle="732, 921, 738, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="76ae5b9b-1fc8-48fd-9f62-eb2691a8f035" InformativeScreenshot="211b1448b6fbccb4d4dbbd612a192573.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/DBXEVgI0VEK2Wy0BWb7M-g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Resumo de conversa' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                   <uix:TargetAnchorable.Anchors>
@@ -923,7 +923,7 @@
                               </uix:NSetText.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -974,7 +974,7 @@
                         </ActivityAction>
                       </uix:NApplicationCard.Body>
                       <uix:NApplicationCard.TargetApp>
-                        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="ZzGzmuL8z0WnAPONRHmGnQ" IconBase64="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" InformativeScreenshot="6c2feb03b2effe83e110b4c9db4755bb.jpg" Reference="qA2mmF-h5UOuwJmMtkU_yg/NXaIiWKh50SqUhzEIYiGPQ" Selector="&lt;html app='chrome.exe' title='Bom dia ajuda' /&gt;" Url="https://chatgpt.com/c/682e0e0c-9000-8010-a887-e5367ea15d47" Version="V2" />
+                        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="6c2feb03b2effe83e110b4c9db4755bb.jpg" Selector="&lt;html app='chrome.exe' title='Bom dia ajuda' /&gt;" Url="https://chatgpt.com/c/682f5b8b-abb8-8010-9075-a7ee549f7ab5" Version="V2" />
                       </uix:NApplicationCard.TargetApp>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -983,13 +983,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NApplicationCard>
-                    <Sequence DisplayName="Resposta IA" sap:VirtualizedContainerService.HintSize="588,2681" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <Sequence DisplayName="Resposta IA" sap:VirtualizedContainerService.HintSize="484,48" sap2010:WorkflowViewState.IdRef="Sequence_34">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="s:String[]" Name="respostaIACortada" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -1207,13 +1207,13 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="656,168" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="552,168" sap2010:WorkflowViewState.IdRef="Sequence_47">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="622,108" sap2010:WorkflowViewState.IdRef="MessageBox_13" Text="[&quot;Passei por aqui!&quot;]" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="518,108" sap2010:WorkflowViewState.IdRef="MessageBox_13" Text="[&quot;Passei por aqui!&quot;]" />
                 </Sequence>
               </If.Else>
             </If>
@@ -1226,7 +1226,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleDoWhile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TriggerTCSBuddy - Invoke Workflow File (TriggerTCSBuddy.xaml)" sap:VirtualizedContainerService.HintSize="694,239" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="TriggerTCSBuddy.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TriggerTCSBuddy - Invoke Workflow File (TriggerTCSBuddy.xaml)" sap:VirtualizedContainerService.HintSize="556,239" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="TriggerTCSBuddy.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="uuat:EmptyArgs" x:Key="TriggerEventArgs" />
         </ui:InvokeWorkflowFile.Arguments>
