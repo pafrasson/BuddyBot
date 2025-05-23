@@ -2,7 +2,7 @@
   "name": "botdiscord",
   "projectId": "7d8aa555-4fe1-4061-bbbf-538648e32c9c",
   "description": "Processo em Branco",
-  "main": "discordAutoBot.xaml",
+  "main": "DiscBot Flow.xaml",
   "dependencies": {
     "UiPath.IntegrationService.Activities": "[1.15.0]",
     "UiPath.System.Activities": "[25.4.2]",
@@ -48,8 +48,14 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "discordAutoBot.xaml",
-      "uniqueId": "f57af0f1-092a-484e-b8e2-091f80d7d9d1",
+      "filePath": "DiscBot\\discordAutoBot.xaml",
+      "uniqueId": "770f78ac-d15e-42bf-bc39-cf70ebd8baee",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DiscBot Flow.xaml",
+      "uniqueId": "afadb753-22bc-4ac9-b448-4ba93dd8d993",
       "input": [],
       "output": []
     }
