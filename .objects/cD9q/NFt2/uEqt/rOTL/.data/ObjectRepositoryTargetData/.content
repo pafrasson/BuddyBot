@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="UvM-uSRIaEm-9ONJLtFMKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="Zym8geunFkuRgQHHse2lPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" DesignTimeRectangle="384, 228, 1544, 738" FuzzySelectorArgument="&lt;ctrl name='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='??│amigo-tcs (canal)' role='grouping' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='grouping' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="cdbe453b-ac46-4258-8bc8-749bd3ff89b8" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='• Discord | #│amigo-tcs | TCSer - study &amp;amp; relax - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-      <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="a0ac2c77-d155-42fb-810a-57fc86391213" CvTextArea="456, 981, 208, 17" CvTextArgument="Conversar em # &quot; amigo-tcs" CvType="Text" DesignTimeRectangle="456, 978, 1259, 22" FuzzySelectorArgument="&lt;ctrl name='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='??│amigo-tcs (canal)' role='grouping' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Conversar em #??│amigo-tcs' role='editable text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='grouping' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='﻿' /&gt;" Guid="242e3f59-4d4d-42c8-8eb4-0c804a1fc57e" SearchSteps="FuzzySelector, CV" />
-        </scg:List>
-      </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="b00c35995af6f1ab3ef9fe81b41b821d.png" xmlns="">0OVMM4IIEw0q_bLD0-yIdHQ</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" DesignTimeRectangle="384, 902, 1528, 48" FullSelectorArgument="&lt;webctrl aria-labelledby='message-username-1376600492934828133 uid_1 message-content-1376600492934828133 uid_2 message-timestamp-1376600492934828133' aria-role='article' tag='DIV' /&gt;" Guid="51d82449-d9f7-426c-96d7-297cd6ba808b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7389ddd1c59541607ebad4cb32795759.png" xmlns="">0gbrWYo_dAUGLgAXkK2ey6w</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">GetText</x:String>
   </ObjectRepositoryTargetData.Data>

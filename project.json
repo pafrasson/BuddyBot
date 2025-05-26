@@ -6,7 +6,7 @@
   "dependencies": {
     "UiPath.IntegrationService.Activities": "[1.15.0]",
     "UiPath.System.Activities": "[25.4.2]",
-    "UiPath.UIAutomation.Activities": "[25.10.2]",
+    "UiPath.UIAutomation.Activities": "[25.10.4]",
     "UiPath.WebAPI.Activities": "1.21.1"
   },
   "webServices": [],
