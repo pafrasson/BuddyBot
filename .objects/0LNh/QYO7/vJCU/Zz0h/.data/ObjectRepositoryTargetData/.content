@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zbgO8mlYGU6_IyWHTfXZog" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/6834aaa1-2f0c-8010-94db-680263c61516" CVScreenId="f1ecb192-1777-4568-b011-9c4b92f26514" CvElementArea="713, 905, 769, 105" CvType="InputBox" DesignTimeRectangle="732, 921, 738, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="6bca0678-d3d2-405a-9f3e-c5cc5ccf35e6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gato de Botas Resumo' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="714, 906, 768, 102" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' parentid='thread-bottom' tag='DIV' /&gt;" Guid="29efefa7-d4d3-47b9-84ee-7edd22494a5e" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7bda15c4490e14ebcc4fb2ff127550c5.png" xmlns="">0wssTJElYCE2Eu2w4gsWoLA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
