@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Bot IA - Poe(2)(1)",
+  "Type": "App",
+  "Id": "JdxlrrPKTU-O62mNDYvEfA",
+  "Reference": "DKgj7qAr9E6ITPpCe02MMQ/JdxlrrPKTU-O62mNDYvEfA",
+  "Created": "2025-05-27T18:56:02.304554Z",
+  "Updated": "2025-05-27T18:56:02.304554Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

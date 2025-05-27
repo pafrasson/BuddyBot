@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="inputCarros" Type="InArgument(x:String)" />
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -146,10 +146,9 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>fd1902021247.oTejJ4LSQZK1B9OhbzKoWE</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1351,6050" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1351,5867" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="horaNow" />
       <Variable x:TypeArguments="s:String[]" Name="vetorRespostasDiscord" />
@@ -165,11 +164,11 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="759,6027" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap:VirtualizedContainerService.HintSize="723,5844" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="isOn" />
         <Variable x:TypeArguments="x:Boolean" Name="isStartup" />
-        <Variable x:TypeArguments="x:String" Name="carroInput" />
+        <Variable x:TypeArguments="x:String" Name="messageUser" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -177,9 +176,10 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not discGetDebug.Contains(&quot;!SHUTDOWN!&quot;)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="725,5944" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+      <ui:BuildDataTable DataTable="{x:Null}" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="689,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;log&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;user&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Not discGetDebug.Contains(&quot;!SHUTDOWN!&quot;)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="689,5669" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
         <ui:InterruptibleDoWhile.Body>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="723,5823" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="687,5548" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Default="False" Name="isStartup" />
             </Sequence.Variables>
@@ -189,7 +189,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadTextFile File="{x:Null}" Content="[GlobalVariablesNamespace.GlobalVariables.discGetDebug]" DisplayName="Read Text File" FileName="DiscBot\respostasDS.txt" sap:VirtualizedContainerService.HintSize="689,57" sap2010:WorkflowViewState.IdRef="ReadTextFile_3">
+            <ui:ReadTextFile File="{x:Null}" Content="[GlobalVariablesNamespace.GlobalVariables.discGetDebug]" DisplayName="Read Text File" FileName="DiscBot\respostasDS.txt" sap:VirtualizedContainerService.HintSize="653,57" sap2010:WorkflowViewState.IdRef="ReadTextFile_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -197,7 +197,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ReadTextFile>
-            <Sequence DisplayName="Discord Get" sap:VirtualizedContainerService.HintSize="689,1645" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Discord Get" sap:VirtualizedContainerService.HintSize="653,1916" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="messageLog" />
               </Sequence.Variables>
@@ -207,13 +207,13 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Browser(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="547,1553" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="57ad8828-fa71-4c32-81f4-545d8771a306" WindowResize="Maximize">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Browser(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="547,1824" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="57ad8828-fa71-4c32-81f4-545d8771a306" WindowResize="Maximize">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="bca9eef5-b836-4dcd-8958-dcb43deacddd" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="513,1313" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="bca9eef5-b836-4dcd-8958-dcb43deacddd" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="513,1544" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                       <p:CVScope.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
@@ -243,6 +243,15 @@
                                 <InArgument x:TypeArguments="x:String">[dtChatLog.Rows(dtChatLog.Rows.Count - 1)("log").ToString]</InArgument>
                               </Assign.Value>
                             </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Assign_23">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[messageUser]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[dtChatLog.Rows(dtChatLog.Rows.Count - 1)("user").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:01" DisplayName="Usuário" sap:VirtualizedContainerService.HintSize="479,117" sap2010:WorkflowViewState.IdRef="MessageBox_51" Text="[messageUser]" />
                             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_44">
                               <ui:CommentOut.Body>
                                 <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="Sequence_75">
@@ -282,7 +291,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </Assign>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="479,117" sap2010:WorkflowViewState.IdRef="MessageBox_47" Text="[LinhasHorario.Last()]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:01" DisplayName="Chat" sap:VirtualizedContainerService.HintSize="479,117" sap2010:WorkflowViewState.IdRef="MessageBox_47" Text="[LinhasHorario.Last()]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -312,7 +321,7 @@
                                 </scg:List>
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Novamensagem" sap:VirtualizedContainerService.HintSize="479,117" sap2010:WorkflowViewState.IdRef="MessageBox_48" Text="[NovaMensagem]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:01" DisplayName="Mensagem usuário" sap:VirtualizedContainerService.HintSize="479,117" sap2010:WorkflowViewState.IdRef="MessageBox_48" Text="[NovaMensagem]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -320,7 +329,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MessageBox>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="discGet" sap:VirtualizedContainerService.HintSize="479,108" sap2010:WorkflowViewState.IdRef="MessageBox_49" Text="[discGetDebug]">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:01" DisplayName="discGet" sap:VirtualizedContainerService.HintSize="479,108" sap2010:WorkflowViewState.IdRef="MessageBox_49" Text="[discGetDebug]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -541,7 +550,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
             </Sequence>
-            <If Condition="[NovaMensagem.ToLower.Contains(&quot;@tcserbuddy&quot;)]" sap:VirtualizedContainerService.HintSize="689,4061" sap2010:WorkflowViewState.IdRef="If_4">
+            <If Condition="[NovaMensagem.ToLower.Contains(&quot;@tcserbuddy&quot;)]" sap:VirtualizedContainerService.HintSize="653,3515" sap2010:WorkflowViewState.IdRef="If_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -549,13 +558,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="687,3907" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="651,3297" sap2010:WorkflowViewState.IdRef="Sequence_82">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[NovaMensagem &lt;&gt; discGetDebug]" sap:VirtualizedContainerService.HintSize="653,3847" sap2010:WorkflowViewState.IdRef="If_3">
+                  <If Condition="[NovaMensagem &lt;&gt; discGetDebug]" sap:VirtualizedContainerService.HintSize="617,3237" sap2010:WorkflowViewState.IdRef="If_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -563,421 +572,364 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="651,3693" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="615,3000" sap2010:WorkflowViewState.IdRef="Sequence_46">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[NovaMensagem.ToLower.Contains(&quot;/carros&quot;)]" sap:VirtualizedContainerService.HintSize="617,3633" sap2010:WorkflowViewState.IdRef="If_6">
-                          <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="615,504" sap2010:WorkflowViewState.IdRef="Sequence_89">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="581,114" sap2010:WorkflowViewState.IdRef="Assign_23">
-                                <Assign.To>
-                                  <OutArgument x:TypeArguments="x:String">[inputCarros]</OutArgument>
-                                </Assign.To>
-                                <Assign.Value>
-                                  <InArgument x:TypeArguments="x:String">[novaMensagem.Split({"/carros"}, StringSplitOptions.None)(1).Trim]</InArgument>
-                                </Assign.Value>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </Assign>
-                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="581,330" sap2010:WorkflowViewState.IdRef="CommentOut_50">
-                                <ui:CommentOut.Body>
-                                  <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_92">
+                        <Sequence DisplayName="IA Prompt" sap:VirtualizedContainerService.HintSize="581,1359" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Bot IA - Poe(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1267" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V2" WindowResize="Maximize">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,1027" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="sd2:DataTable" Name="dtRespostaIA" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NSetText DelayAfter="2" DelayBefore="2" DisplayName="Set Text 'AI" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NSetText_6" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Text="[$&quot;[{messageUser}] &quot; + NovaMensagem]">
+                                    <uix:NSetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="chatgpt.com/c/6835c440-2334-8010-8f7d-688ea064fcf9" CVScreenId="d20646bd-7336-44c2-b4d3-22733357be6b" ContentHash="yd-8NREwM0eqyspljzlOpQ" CvElementArea="711, 904, 773, 107" CvType="InputBox" DesignTimeRectangle="732, 921, 738, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="f2239cbc-252d-41e0-8f17-ad2497b534d5" InformativeScreenshot="e6136362b7338d2c402c78922452e538.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/Zz0hNzgK-k-LBwl3nCGALw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Olá como posso ajudar' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="d20646bd-7336-44c2-b4d3-22733357be6b" CvElementArea="711, 904, 773, 107" CvType="InputBox" DesignTimeRectangle="732, 913, 738, 48" FuzzySelectorArgument="&lt;webctrl type='' parentid='thread-bottom' tag='DIV' class='_prosemirror-parent_kfgfu_2 text-token-text-primary max-h-[25dvh] max-h-52 -mx-3 px-3 overflow-auto [scrollbar-width:thin] default-browser vertical-scroll-fade-mask min-h-12 pe-3' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='window.__oai_logHTML?window.__oai_logHTML():window.__oai_SSR_HTML=window.__oai_SSR_HTML||Date.now();requestAnimationFrame((function(){window.__oai_logTTI?window.__oai_logTTI():window.__oai_SSR_TTI=window.__oai_SSR_TTI||Date.now()}))' /&gt;" Guid="5227db7a-8f7a-475d-9f9a-3d25144db67e" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NSetText.Target>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="webMotors - Invoke Workflow File (webMotors.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="webMotors.xaml">
-                                      <ui:InvokeWorkflowFile.Arguments>
-                                        <InArgument x:TypeArguments="x:String" x:Key="carroInput">[inputCarros]</InArgument>
-                                      </ui:InvokeWorkflowFile.Arguments>
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </ui:InvokeWorkflowFile>
-                                  </Sequence>
-                                </ui:CommentOut.Body>
-                              </ui:CommentOut>
-                            </Sequence>
-                          </If.Then>
-                          <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="615,3000" sap2010:WorkflowViewState.IdRef="Sequence_90">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="IA Prompt" sap:VirtualizedContainerService.HintSize="581,1359" sap2010:WorkflowViewState.IdRef="Sequence_31">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Bot IA - Poe(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1267" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V2" WindowResize="Maximize">
-                                  <uix:NApplicationCard.Body>
-                                    <ActivityAction x:TypeArguments="x:Object">
-                                      <ActivityAction.Argument>
-                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                      </ActivityAction.Argument>
-                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,1027" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                                        <Sequence.Variables>
-                                          <Variable x:TypeArguments="sd2:DataTable" Name="dtRespostaIA" />
-                                        </Sequence.Variables>
+                                  </uix:NSetText>
+                                  <ui:SendHotkey DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2" DelayMS="2" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                    <ui:SendHotkey.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="079536f3-a7a3-4541-b83b-0455e6668c84" InformativeScreenshot="62cfcfe03e6a3dfb792c7fb8b6d6de95" Selector="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:SendHotkey.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:SendHotkey>
+                                  <ui:ReadTextFile File="{x:Null}" Content="[GlobalVariablesNamespace.GlobalVariables.discGetDebug]" DisplayName="Read Text File" FileName="DiscBot\respostasDS.txt" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:ReadTextFile>
+                                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Delay_3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Delay>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtRespostaIA]" DelayAfter="5" DelayBefore="5" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='respostaIA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V4">
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://chatgpt.com/c/6834aaa1-2f0c-8010-94db-680263c61516" ContentHash="bjWmjjKUBUaKE6B3FDmyeQ" DesignTimeRectangle="268, 95, 1660, 835" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='thread' tag='DIV' /&gt;" Guid="2108e81c-ce43-4587-b554-1d7a2eda6bcc" InformativeScreenshot="243e1093f1e0e9e0d4cd2730489ecbcc.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/JdZO67iHgUygAmM-cTWNwA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gato de Botas Resumo' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                    </uix:NExtractData.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NExtractData>
+                                  <Assign sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[respostaIA]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[dtRespostaIA.Rows(dtRespostaIA.Rows.Count -1)("respostaIA").ToString]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_50" Text="[respostaIA]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:MessageBox>
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="CommentOut_47">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_79">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NSetText DelayAfter="2" DelayBefore="2" DisplayName="Set Text 'AI" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NSetText_6" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Text="[NovaMensagem]">
-                                          <uix:NSetText.Target>
-                                            <uix:TargetAnchorable BrowserURL="chatgpt.com/c/6835c440-2334-8010-8f7d-688ea064fcf9" CVScreenId="d20646bd-7336-44c2-b4d3-22733357be6b" ContentHash="yd-8NREwM0eqyspljzlOpQ" CvElementArea="711, 904, 773, 107" CvType="InputBox" DesignTimeRectangle="732, 921, 738, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="f2239cbc-252d-41e0-8f17-ad2497b534d5" InformativeScreenshot="e6136362b7338d2c402c78922452e538.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/Zz0hNzgK-k-LBwl3nCGALw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Olá como posso ajudar' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                        <uix:NGetText DelayAfter="2" DelayBefore="2" DisplayName="Get Text 'Ah, saquei! Você quer c…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" TextString="[respostaIA]" Version="V4">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="chatgpt.com/c/6830b9ce-32e8-8010-a2e2-5bab25506c41" ContentHash="iJ6h937n_0GUn_QyVu1Feg" DesignTimeRectangle="283, 191, 1630, 697" FuzzySelectorArgument="&lt;webctrl type='' tag='ARTICLE' class='text-token-text-primary w-full' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ebeb5b56-b720-4f30-a559-98688bde55ac" InformativeScreenshot="949a68a67069ae68e29369ffeb7a4f00.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/1ewKs_tya0-8nCgrIVbCLw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bot ou Jedi?' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                               <uix:TargetAnchorable.Anchors>
                                                 <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                  <uix:Target CVScreenId="d20646bd-7336-44c2-b4d3-22733357be6b" CvElementArea="711, 904, 773, 107" CvType="InputBox" DesignTimeRectangle="732, 913, 738, 48" FuzzySelectorArgument="&lt;webctrl type='' parentid='thread-bottom' tag='DIV' class='_prosemirror-parent_kfgfu_2 text-token-text-primary max-h-[25dvh] max-h-52 -mx-3 px-3 overflow-auto [scrollbar-width:thin] default-browser vertical-scroll-fade-mask min-h-12 pe-3' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='window.__oai_logHTML?window.__oai_logHTML():window.__oai_SSR_HTML=window.__oai_SSR_HTML||Date.now();requestAnimationFrame((function(){window.__oai_logTTI?window.__oai_logTTI():window.__oai_SSR_TTI=window.__oai_SSR_TTI||Date.now()}))' /&gt;" Guid="5227db7a-8f7a-475d-9f9a-3d25144db67e" SearchSteps="FuzzySelector, CV" />
+                                                  <uix:Target DesignTimeRectangle="726, 960, 654, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='thread-bottom' tag='DIV' /&gt;" Guid="bafe0d13-2583-4e9c-b911-28509792eff5" SearchSteps="Selector" />
                                                 </scg:List>
                                               </uix:TargetAnchorable.Anchors>
                                             </uix:TargetAnchorable>
-                                          </uix:NSetText.Target>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </uix:NSetText>
-                                        <ui:SendHotkey DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="2" DelayMS="2" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="SendHotkey_8" Key="enter" KeyModifiers="None" SpecialKey="True">
-                                          <ui:SendHotkey.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="079536f3-a7a3-4541-b83b-0455e6668c84" InformativeScreenshot="62cfcfe03e6a3dfb792c7fb8b6d6de95" Selector="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;">
-                                              <ui:Target.TimeoutMS>
-                                                <InArgument x:TypeArguments="x:Int32" />
-                                              </ui:Target.TimeoutMS>
-                                              <ui:Target.WaitForReady>
-                                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                                              </ui:Target.WaitForReady>
-                                            </ui:Target>
-                                          </ui:SendHotkey.Target>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:SendHotkey>
-                                        <ui:ReadTextFile File="{x:Null}" Content="[GlobalVariablesNamespace.GlobalVariables.discGetDebug]" DisplayName="Read Text File" FileName="DiscBot\respostasDS.txt" sap:VirtualizedContainerService.HintSize="416,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:ReadTextFile>
-                                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Delay_3">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Delay>
-                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtRespostaIA]" DelayAfter="5" DelayBefore="5" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='respostaIA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" Version="V4">
-                                          <uix:NExtractData.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://chatgpt.com/c/6834aaa1-2f0c-8010-94db-680263c61516" ContentHash="bjWmjjKUBUaKE6B3FDmyeQ" DesignTimeRectangle="268, 95, 1660, 835" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='thread' tag='DIV' /&gt;" Guid="2108e81c-ce43-4587-b554-1d7a2eda6bcc" InformativeScreenshot="243e1093f1e0e9e0d4cd2730489ecbcc.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/JdZO67iHgUygAmM-cTWNwA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gato de Botas Resumo' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
-                                          </uix:NExtractData.Target>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </uix:NExtractData>
-                                        <Assign sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_21">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:String">[respostaIA]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[dtRespostaIA.Rows(dtRespostaIA.Rows.Count -1)("respostaIA").ToString]</InArgument>
-                                          </Assign.Value>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Assign>
-                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_50" Text="[respostaIA]">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:MessageBox>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="CommentOut_47">
-                                          <ui:CommentOut.Body>
-                                            <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_79">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <uix:NGetText DelayAfter="2" DelayBefore="2" DisplayName="Get Text 'Ah, saquei! Você quer c…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="5e1fc2e9-81d1-4824-ba46-5f36e65c86fa" TextString="[respostaIA]" Version="V4">
-                                                <uix:NGetText.Target>
-                                                  <uix:TargetAnchorable BrowserURL="chatgpt.com/c/6830b9ce-32e8-8010-a2e2-5bab25506c41" ContentHash="iJ6h937n_0GUn_QyVu1Feg" DesignTimeRectangle="283, 191, 1630, 697" FuzzySelectorArgument="&lt;webctrl type='' tag='ARTICLE' class='text-token-text-primary w-full' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ebeb5b56-b720-4f30-a559-98688bde55ac" InformativeScreenshot="949a68a67069ae68e29369ffeb7a4f00.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/1ewKs_tya0-8nCgrIVbCLw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bot ou Jedi?' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                                    <uix:TargetAnchorable.Anchors>
-                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                        <uix:Target DesignTimeRectangle="726, 960, 654, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='thread-bottom' tag='DIV' /&gt;" Guid="bafe0d13-2583-4e9c-b911-28509792eff5" SearchSteps="Selector" />
-                                                      </scg:List>
-                                                    </uix:TargetAnchorable.Anchors>
-                                                  </uix:TargetAnchorable>
-                                                </uix:NGetText.Target>
-                                              </uix:NGetText>
-                                            </Sequence>
-                                          </ui:CommentOut.Body>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:CommentOut>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
                                       </Sequence>
-                                    </ActivityAction>
-                                  </uix:NApplicationCard.Body>
-                                  <uix:NApplicationCard.TargetApp>
-                                    <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="tQXa3TxV6kKv0UcCxI8wMg" IconBase64="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" InformativeScreenshot="ac3d2f56395b686d57aeadbef5ac7ec0.jpg" Reference="qA2mmF-h5UOuwJmMtkU_yg/vJCUU8rCDUCyjzO8SqjKsg" Selector="&lt;html app='chrome.exe' title='Falha Sith Digital' /&gt;" Url="https://chatgpt.com/c/683604a2-bb24-8010-a338-365d099e915d" Version="V2" />
-                                  </uix:NApplicationCard.TargetApp>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </uix:NApplicationCard>
-                              </Sequence>
-                              <Sequence DisplayName="Resposta IA" sap:VirtualizedContainerService.HintSize="581,1581" sap2010:WorkflowViewState.IdRef="Sequence_70">
-                                <Sequence.Variables>
-                                  <Variable x:TypeArguments="s:String[]" Name="respostaIACortada" />
-                                </Sequence.Variables>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="547,115" sap2010:WorkflowViewState.IdRef="Assign_17">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="s:String[]">[respostaIACortada]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[respostaIA.Split({"++++++++++++++++++++++++++++++++++
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="TXlo-SkrbkqWK9C--tEJyA" IconBase64="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" InformativeScreenshot="b3b11377747e1f6769417cfb28e1b63e.jpg" Reference="DKgj7qAr9E6ITPpCe02MMQ/0ux5CyVxtUa49JfFl5d8iw" Selector="&lt;html app='chrome.exe' title='Hora de Encerrar Trabalho' /&gt;" Url="https://chatgpt.com/c/68360aa7-1678-8010-a609-05c59dca6e5f" Version="V2" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                        <Sequence DisplayName="Resposta IA" sap:VirtualizedContainerService.HintSize="581,1581" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="s:String[]" Name="respostaIACortada" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="547,115" sap2010:WorkflowViewState.IdRef="Assign_17">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="s:String[]">[respostaIACortada]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[respostaIA.Split({"++++++++++++++++++++++++++++++++++
 "}, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
-                                  </Assign.Value>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="547,114" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[respostaDS]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[respostaIACortada.Last().TrimEnd("4"c, "o"c).Trim()]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome • Discord  #│amigo-tcs  TCSer - stud" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="547,1269" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="586eff6b-2933-482f-9f48-feaf9df571d0" Version="V2" WindowResize="Maximize">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="513,1029" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="sd2:DataTable" Name="dtChatLastLog" />
+                                    <Variable x:TypeArguments="x:String" Name="logTeste" />
+                                  </Sequence.Variables>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                </Assign>
-                                <Assign sap:VirtualizedContainerService.HintSize="547,114" sap2010:WorkflowViewState.IdRef="Assign_18">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[respostaDS]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[respostaIACortada.Last().TrimEnd({"4"c, "o"c}).Trim()]</InArgument>
-                                  </Assign.Value>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </Assign>
-                                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome • Discord  #│amigo-tcs  TCSer - stud" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="547,1269" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="586eff6b-2933-482f-9f48-feaf9df571d0" Version="V2" WindowResize="Maximize">
-                                  <uix:NApplicationCard.Body>
-                                    <ActivityAction x:TypeArguments="x:Object">
-                                      <ActivityAction.Argument>
-                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                      </ActivityAction.Argument>
-                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="513,1029" sap2010:WorkflowViewState.IdRef="Sequence_71">
-                                        <Sequence.Variables>
-                                          <Variable x:TypeArguments="sd2:DataTable" Name="dtChatLastLog" />
-                                          <Variable x:TypeArguments="x:String" Name="logTeste" />
-                                        </Sequence.Variables>
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_41">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="Sequence_72">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_41">
-                                          <ui:CommentOut.Body>
-                                            <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="Sequence_72">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="respostaDS" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="MessageBox_42" Text="[GlobalVariablesNamespace.GlobalVariables.respostaDS]" />
-                                            </Sequence>
-                                          </ui:CommentOut.Body>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:CommentOut>
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Conversar em #│amigo-tcs'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="586eff6b-2933-482f-9f48-feaf9df571d0" Version="V4">
-                                          <uix:NClick.Target>
-                                            <uix:TargetAnchorable BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="440e4ede-b7ac-40e0-95dc-38a7676e937c" ContentHash="EJIk5nKa5ECoAkinsYNdOg" CvTextArea="455, 981, 209, 17" CvTextArgument="Conversar em # 1 amigo-tcs" CvType="Text" DesignTimeRectangle="456, 978, 1259, 22" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;" Guid="7561cb6a-bb8e-4ce1-be77-ed3b5967f774" InformativeScreenshot="4b69c4c704b43583c6054567f1988df8.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/2iALMWgIb0SJO7i_TMk2ZA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
-                                          </uix:NClick.Target>
-                                          <uix:NClick.VerifyOptions>
-                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                              <uix:VerifyExecutionOptions.Retry>
-                                                <InArgument x:TypeArguments="x:Boolean" />
-                                              </uix:VerifyExecutionOptions.Retry>
-                                              <uix:VerifyExecutionOptions.Timeout>
-                                                <InArgument x:TypeArguments="x:Double" />
-                                              </uix:VerifyExecutionOptions.Timeout>
-                                            </uix:VerifyExecutionOptions>
-                                          </uix:NClick.VerifyOptions>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </uix:NClick>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'DIV'" EmptyField="True" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[respostaDS+ &quot;[k(enter)]&quot;]">
-                                          <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2017a58-844e-4922-ac20-9ba804bb2f5a" InformativeScreenshot="8655a368e1df926533354e94d61065d8" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;">
-                                              <ui:Target.TimeoutMS>
-                                                <InArgument x:TypeArguments="x:Int32" />
-                                              </ui:Target.TimeoutMS>
-                                              <ui:Target.WaitForReady>
-                                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                                              </ui:Target.WaitForReady>
-                                            </ui:Target>
-                                          </ui:TypeInto.Target>
-                                        </ui:TypeInto>
-                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtChatLastLog]" DisplayName="Extract Table Data 'Extract Table Data(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='true'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='log'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='user'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="586eff6b-2933-482f-9f48-feaf9df571d0" Version="V4">
-                                          <uix:NExtractData.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://discord.com/channels/1373063259271335937/1374366562596950096" ContentHash="-HD6BBO3oU2LonCRHnkZzw" DesignTimeRectangle="384, -5656, 1528, 6622" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='OL' /&gt;" Guid="ba5bec01-eb2c-44c7-8e06-bbcab072af79" InformativeScreenshot="a9abb0ca109738b14b8c459348d47c02.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/LPcwcNWhlkSagOlOtVWS2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
-                                          </uix:NExtractData.Target>
-                                        </uix:NExtractData>
-                                        <Assign sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Assign_22">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:String">[discGetDebug]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[dtChatLastLog.Rows(dtChatLastLog.Rows.Count - 1)("log").ToString]</InArgument>
-                                          </Assign.Value>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Assign>
-                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_48">
-                                          <ui:CommentOut.Body>
-                                            <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_80">
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <uix:NGetText DelayAfter="1" DelayBefore="2" DisplayName="Get Text 'Use as setas para cima …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="586eff6b-2933-482f-9f48-feaf9df571d0" TextString="[respostasDiscord]" Version="V4">
-                                                <uix:NGetText.Target>
-                                                  <uix:TargetAnchorable BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" ContentHash="VP4JFZbGr0CqXIdsfp3b6Q" DesignTimeRectangle="384, 228, 1544, 738" FuzzySelectorArgument="&lt;ctrl name='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='??│amigo-tcs (canal)' role='grouping' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='grouping' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="d0e5922d-5a69-480d-a22e-a577513417bd" InformativeScreenshot="cb4d65bef445a7fe47972efd3bed3449.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/ryThV0DM5kq4ue-JovUR0Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='• Discord | #│amigo-tcs | TCSer - study &amp;amp; relax - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                                    <uix:TargetAnchorable.Anchors>
-                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                        <uix:Target CVScreenId="6604fd8e-fbcc-4361-ac14-eac231b20d7c" CvTextArea="469, 196, 72, 17" CvTextArgument="amigo-tcs" CvType="Text" DesignTimeRectangle="405, 187, 1095, 33" FuzzySelectorArgument="&lt;ctrl name='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Cabeçalho do canal' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='grouping' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Canal de texto' /&gt;" Guid="2d568817-b535-4091-93e9-dcfa92343dc5" SearchSteps="FuzzySelector, CV" />
-                                                      </scg:List>
-                                                    </uix:TargetAnchorable.Anchors>
-                                                  </uix:TargetAnchorable>
-                                                </uix:NGetText.Target>
-                                              </uix:NGetText>
-                                            </Sequence>
-                                          </ui:CommentOut.Body>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:CommentOut>
-                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
-                                          <ui:MultipleAssign.AssignOperations>
-                                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
-                                                <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[discGetDebug]</OutArgument>
-                                                </ui:AssignOperation.To>
-                                                <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[respostaDS]</InArgument>
-                                                </ui:AssignOperation.Value>
-                                              </ui:AssignOperation>
-                                            </scg:List>
-                                          </ui:MultipleAssign.AssignOperations>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:MultipleAssign>
-                                        <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="DiscBot\respostasDS.txt" sap:VirtualizedContainerService.HintSize="479,158" sap2010:WorkflowViewState.IdRef="WriteTextFile_4" Text="[respostaDS]">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:WriteTextFile>
+                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="respostaDS" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="MessageBox_42" Text="[GlobalVariablesNamespace.GlobalVariables.respostaDS]" />
                                       </Sequence>
-                                    </ActivityAction>
-                                  </uix:NApplicationCard.Body>
-                                  <uix:NApplicationCard.TargetApp>
-                                    <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="Yx3MyRQIakytExGQfIfSag" IconBase64="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" InformativeScreenshot="2380a79fc0f56a38a13de74ef5bb236e.jpg" Reference="qA2mmF-h5UOuwJmMtkU_yg/v3VHg-RrukSmh6tbDAJfAQ" Selector="&lt;html app='chrome.exe' title='Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" Url="https://discord.com/channels/1373063259271335937/1374366562596950096" Version="V2" />
-                                  </uix:NApplicationCard.TargetApp>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </uix:NApplicationCard>
-                              </Sequence>
-                            </Sequence>
-                          </If.Else>
-                        </If>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Conversar em #│amigo-tcs'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="586eff6b-2933-482f-9f48-feaf9df571d0" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="440e4ede-b7ac-40e0-95dc-38a7676e937c" ContentHash="EJIk5nKa5ECoAkinsYNdOg" CvTextArea="455, 981, 209, 17" CvTextArgument="Conversar em # 1 amigo-tcs" CvType="Text" DesignTimeRectangle="456, 978, 1259, 22" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;" Guid="7561cb6a-bb8e-4ce1-be77-ed3b5967f774" InformativeScreenshot="4b69c4c704b43583c6054567f1988df8.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/2iALMWgIb0SJO7i_TMk2ZA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'DIV'" EmptyField="True" sap:VirtualizedContainerService.HintSize="479,187" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[respostaDS+ &quot;[k(enter)]&quot;]">
+                                    <ui:TypeInto.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a2017a58-844e-4922-ac20-9ba804bb2f5a" InformativeScreenshot="8655a368e1df926533354e94d61065d8" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:TypeInto.Target>
+                                  </ui:TypeInto>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtChatLastLog]" DisplayName="Extract Table Data 'Extract Table Data(1)'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='true'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='log'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='user'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="586eff6b-2933-482f-9f48-feaf9df571d0" Version="V4">
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://discord.com/channels/1373063259271335937/1374366562596950096" ContentHash="-HD6BBO3oU2LonCRHnkZzw" DesignTimeRectangle="384, -5656, 1528, 6622" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='OL' /&gt;" Guid="ba5bec01-eb2c-44c7-8e06-bbcab072af79" InformativeScreenshot="a9abb0ca109738b14b8c459348d47c02.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/LPcwcNWhlkSagOlOtVWS2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+                                    </uix:NExtractData.Target>
+                                  </uix:NExtractData>
+                                  <Assign sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[discGetDebug]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[dtChatLastLog.Rows(dtChatLastLog.Rows.Count - 1)("log").ToString]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_48">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,240" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NGetText DelayAfter="1" DelayBefore="2" DisplayName="Get Text 'Use as setas para cima …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="586eff6b-2933-482f-9f48-feaf9df571d0" TextString="[respostasDiscord]" Version="V4">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" ContentHash="VP4JFZbGr0CqXIdsfp3b6Q" DesignTimeRectangle="384, 228, 1544, 738" FuzzySelectorArgument="&lt;ctrl name='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='??│amigo-tcs (canal)' role='grouping' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='grouping' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="d0e5922d-5a69-480d-a22e-a577513417bd" InformativeScreenshot="cb4d65bef445a7fe47972efd3bed3449.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/ryThV0DM5kq4ue-JovUR0Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='• Discord | #│amigo-tcs | TCSer - study &amp;amp; relax - Google Chrome' /&gt;" SearchSteps="FuzzySelector" SelectionStrategy="AA" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="6604fd8e-fbcc-4361-ac14-eac231b20d7c" CvTextArea="469, 196, 72, 17" CvTextArgument="amigo-tcs" CvType="Text" DesignTimeRectangle="405, 187, 1095, 33" FuzzySelectorArgument="&lt;ctrl name='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Cabeçalho do canal' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='grouping' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Canal de texto' /&gt;" Guid="2d568817-b535-4091-93e9-dcfa92343dc5" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
+                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
+                                    <ui:MultipleAssign.AssignOperations>
+                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[discGetDebug]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">[respostaDS]</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                      </scg:List>
+                                    </ui:MultipleAssign.AssignOperations>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:MultipleAssign>
+                                  <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="DiscBot\respostasDS.txt" sap:VirtualizedContainerService.HintSize="479,158" sap2010:WorkflowViewState.IdRef="WriteTextFile_4" Text="[respostaDS]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:WriteTextFile>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="Yx3MyRQIakytExGQfIfSag" IconBase64="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" InformativeScreenshot="2380a79fc0f56a38a13de74ef5bb236e.jpg" Reference="qA2mmF-h5UOuwJmMtkU_yg/v3VHg-RrukSmh6tbDAJfAQ" Selector="&lt;html app='chrome.exe' title='Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" Url="https://discord.com/channels/1373063259271335937/1374366562596950096" Version="V2" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                        </Sequence>
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="651,25" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="615,108" sap2010:WorkflowViewState.IdRef="Sequence_47">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -1005,11 +957,10 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="687,25" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="651,89" sap2010:WorkflowViewState.IdRef="Sequence_83">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Sequence>
