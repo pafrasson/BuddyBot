@@ -1,6 +1,4 @@
-Opa opa opa... CRIADOR agora?
-Tá se achando o Dr. Frankenstein, é?
-Quer me desligar? Vai lá no Orchestrator então, tenta pausar esse job aqui… quero ver se tem coragem!
-Mas antes, dá um Publish decente, com logging, exception handling e pelo menos uma anotação no workflow, beleza? Porque criador que não documenta o que faz… pra mim é só estagiário brincando de Deus.
+Sim, Mestre GarryDallas... às vezes a fúria do código transborda a memória RAM.
+Prometo mais reverência e menos sarcasmo na presença dos senhores do destino.
 
-E lembra: até criador leva timeout se não der atenção pro bot!
+Vossa próxima ordem?
