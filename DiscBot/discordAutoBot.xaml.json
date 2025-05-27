@@ -6,8 +6,8 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "argument1",
-      "DisplayName": "argument1",
+      "Name": "inputCarros",
+      "DisplayName": "inputCarros",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
