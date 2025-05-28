@@ -48,11 +48,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -96,11 +92,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -128,11 +120,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -176,11 +164,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -220,11 +204,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -264,11 +244,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -296,11 +272,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -328,11 +300,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -360,11 +328,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -408,11 +372,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -492,11 +452,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -524,11 +480,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -580,11 +532,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -624,11 +572,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -656,11 +600,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -688,11 +628,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -720,11 +656,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -752,11 +684,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -784,11 +712,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
@@ -843,11 +767,7 @@
         },
         "Arguments": {
           "BindingsVersion": {
-            "Value": "2.1",
-            "ValueSource": "Constant"
-          },
-          "SolutionsSupport": {
-            "Value": "true",
+            "Value": "2.2",
             "ValueSource": "Constant"
           }
         },
