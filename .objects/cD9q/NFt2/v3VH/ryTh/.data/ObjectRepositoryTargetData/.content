@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="nog0Mc1_ckuVdDfilpdp5Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" DesignTimeRectangle="384, -5411, 1528, 6377" FullSelectorArgument="&lt;webctrl tag='OL' /&gt;" Guid="074d1b89-ccd9-4c4c-8b17-78b1da880736" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-      <imageRef attrName="InformativeScreenshot" originalValue="fa18efd34eb4d30f00f8c6c5084e8f90.png" xmlns="">0LMdbGY-rlE2qaqcs0MfkpQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">GetText</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

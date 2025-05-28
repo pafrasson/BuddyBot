@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Ah, saquei! Você quer c…",
+  "Type": "Element",
+  "Id": "1ewKs_tya0-8nCgrIVbCLw",
+  "Reference": "qA2mmF-h5UOuwJmMtkU_yg/1ewKs_tya0-8nCgrIVbCLw",
+  "ParentRef": "qA2mmF-h5UOuwJmMtkU_yg/vJCUU8rCDUCyjzO8SqjKsg",
+  "Created": "2025-05-23T18:24:31.4276544Z",
+  "Updated": "2025-05-23T18:24:31.4276544Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TQN4hgBz8kC_fe1vovyQmA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="e4a94d40-09a1-46d3-b43f-334783a2e7f0" CvType="AnyWordGroup" DesignTimeRectangle="456, 904, 65, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' parentid='message-username-1375658052195188737' tag='SPAN' /&gt;" Guid="e34cc4fe-d31b-4494-868d-0f51403536af" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="384, 902, 1528, 48" FuzzySelectorArgument="&lt;webctrl aria-labelledby='message-username-1375658052195188737 uid_1 message-content-1375658052195188737 uid_2 message-timestamp-1375658052195188737' aria-role='article' tag='DIV' type='' class='message__5126c cozyMessage__5126c groupStart__5126c wrapper_c19a55 cozy_c19a55 zalgo_c19a55' aaname='' matching:aria-labelledby='fuzzy' fuzzylevel:aria-labelledby='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='JotaPeヅ&amp;#xA;Ａｕｒａ&amp;#xA; — &amp;#xA;23/05/2025, 23:13&amp;#xA;Eae bot&amp;#xA;NOVO' /&gt;" Guid="f00796f0-64a2-48dc-a6a8-1062eef02555" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7c1ec3fd236a5e600394ac20ffae5832.png" xmlns="">0tBO37lOm8USGU2pQ7qkfOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

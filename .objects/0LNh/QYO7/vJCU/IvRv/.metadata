@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Use as setas para cima …",
+  "Type": "Element",
+  "Id": "IvRvPOy5ZkeBzl-r88qwEw",
+  "Reference": "qA2mmF-h5UOuwJmMtkU_yg/IvRvPOy5ZkeBzl-r88qwEw",
+  "ParentRef": "qA2mmF-h5UOuwJmMtkU_yg/vJCUU8rCDUCyjzO8SqjKsg",
+  "Created": "2025-05-26T18:09:00.008901Z",
+  "Updated": "2025-05-26T18:09:00.008901Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

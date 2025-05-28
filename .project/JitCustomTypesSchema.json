@@ -1,0 +1,54 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "1902021247",
+        "bundleName": "fd1902021247",
+        "entitiesBundle": {
+          "Types": {
+            "FormData": {
+              "name": "FormData",
+              "properties": [
+                {
+                  "name": "Buscar",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "Silenciar",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "DesativarUdio",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "ConversarEmAmigoTcs",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.UIAutomationNext.Activities.Design.SWEntities.fd1902021247",
+        "hash": "MTkwMjAyMTI0Nw",
+        "assemblyName": "fd1902021247.oTejJ4LSQZK1B9OhbzKoWE"
+      }
+    }
+  ]
+}

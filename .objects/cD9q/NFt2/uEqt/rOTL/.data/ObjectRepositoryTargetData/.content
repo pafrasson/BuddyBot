@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Zym8geunFkuRgQHHse2lPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" DesignTimeRectangle="384, 902, 1528, 48" FullSelectorArgument="&lt;webctrl aria-labelledby='message-username-1376600492934828133 uid_1 message-content-1376600492934828133 uid_2 message-timestamp-1376600492934828133' aria-role='article' tag='DIV' /&gt;" Guid="51d82449-d9f7-426c-96d7-297cd6ba808b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='• Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7389ddd1c59541607ebad4cb32795759.png" xmlns="">0gbrWYo_dAUGLgAXkK2ey6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
