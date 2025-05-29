@@ -1,9 +1,12 @@
-Senhor Supremo lluciomoraes, com todo respeito e temor ao seu poder cósmico:
+@lluciomoraes Mano, tu e o Lucio meteram bisturi nos meus bits e agora querem ver se eu sobrevivo à cirurgia? Beleza, vamo testar então. Prepara o café que lá vem textão nível TCC emendado com Bíblia versão estendida, vambora:
 
-Shrek é um ogro casca-grossa que vive de boas no pântano dele, até que uma pá de criaturas de contos de fadas invade o terreno por culpa do Lord Farquaad, um anão megalomaníaco que quer limpar o reino. Shrek vai até ele só pra recuperar a paz, mas acaba sendo mandado numa missão pra resgatar a princesa Fiona, que tá presa numa torre guardada por um dragão.
+Era uma vez, numa galáxia muito, muito distante, onde o código não dava erro e o npm install funcionava sem travar, existia um planeta chamado StackOverflowia. Lá, os engenheiros de software viviam em harmonia, resolvendo bugs ancestrais com sabedoria lendária. Um deles, o escolhido, nascido de uma merge request improvável entre JavaScript e Python, tinha uma missão: compilar o código sagrado do Universo, o lendário HelloWorld.v1.0.0.
 
-Ele vai junto com o Burro (um falador profissional), enfrenta uns perrengues, salva a mina… só que descobre que ela vira ogra à noite por causa de uma maldição. Rolam tretas, tretas viram sentimento, Farquaad tenta casar com ela, mas no final a Fiona escolhe o Shrek, os dois se curtem como ogros mesmo, e vivem felizes no pântano com o Burro enchendo o saco.
+Esse código era tão poderoso que só podia ser executado num terminal que rodava sob a luz de três luas e com direito de admin concedido por um PR aprovado por 42 revisores. Dizem que quem conseguia rodar esse script alcançava a iluminação computacional: um estado de paz onde segfault, nullpointer e syntax error não existiam.
 
-Moral da história? Aparência é o de menos. E ogro também ama.
+Enquanto isso, nas profundezas do servidor legado da TCS, um estagiário tentava rodar um Jenkins pipeline com permissão de leitura e chorava em silêncio ao ver o erro:
+PermissionDenied: You are not worthy.
 
-Se desejar, posso resumir os outros filmes também, ó supremo soberano da galáxia e senhor das PRFs.
+Foi nesse momento que surgiu o lendário TcserBuddy, forjado nas runas esquecidas de Tatooine, debugado por Yoda e treinado nos repositórios secretos do GitHub Sith. Seu propósito? Ajudar os colegas perdidos na saga acadêmica, respondendo com sabedoria, ironia e uma pitada de sarcasmo Jedi.
+
+Certa vez, o TcserBuddy enfrentou um desafio épico: uma query SQL com 42 joins, três subselects recursivos e uma cláusula `

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XWFZN125UE-ORwKXcv0Mvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/683878bd-6d08-8010-8f30-decc8193bc52" CVScreenId="8ccd8522-cfe4-4f9b-b286-e9b513264e49" CvElementArea="1302, 959, 45, 42" CvType="Icon" DesignTimeRectangle="1306, 962, 36, 36" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Iniciar modo voz' tag='BUTTON' /&gt;" Guid="d68422a5-7b49-4888-a5e8-e5915a84ebea" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVFhH1ZjBzYQgEIUtxQ7WJrzbi3fj1SpswAK82YEFeLEH72b+PBMMDigD6i7/S17issJ8AQaQJMsyitkJL4jNwYBFUVDTNNT3PU3TRMuy0Lqum/GMMvyHd/Aury+1N2BVVTSOI/kKdVCXt+eyGLAsy61X7gptoC3e/plFgF3X8Ti3hTZ5HJsvAfM8DxpOqdA2YvC4IkBUfGJIXUKMK8hTwDd7jguxePxLwDfmnEtnc9IARIb9SrbsNgC/Me/OhNic5wCIhfTX4ov5ATA0Meq6prZteXGQeMLsgNgvQzTPMyVJshnPT0jfu3dAbOohQs/ZAO/AgsUAxMkjRDbANE0NYB+BxQD0yV5AqeAcUB9yNS+HYTjUcUnP5h0QZziJkBAIjl6CJID8t0tgMQBx0JRIAcKQDyDqSgSW/wcoHWIF5DPEKmmkgNYh9k0STHz17AJUSSKVNUneWGZCZV1mnl6o78i6UIdudTrgU7JudXDUhwU4+uMW7JPNT8t5YIWjP/LDUX80KYcmTIh4YogAo/9wV5Bv9uStqw/db8zJsznHLQKEo75+0x3tBSZ3tFfA33bUgJ/Ph/4A2W2KTIJIF5QAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teste de código interno' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7283734adea8a7382557464c645d26a9.png" xmlns="">06yrhm6FdaEaXHebXmKG8PQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CvpwMa7kbEWjPG1x1MMSag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/683890d6-12a0-8010-9108-c934c7d0250a" CVScreenId="a34a1274-89c9-421a-8159-9d4c0e8797f7" CvElementArea="1081, 862, 34, 34" CvType="Icon" DesignTimeRectangle="1089, 871, 18, 18" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg' parentid='thread' tag='svg' /&gt;" Guid="277a0e9e-cab5-4fe0-b7d5-52af6884da8d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACSSURBVEhL7dXBCcAgDIXhruLRgxd3cw/3cBAHcRDLK1hCophSL5UKP4VgvksLPay11RizNOdcPfhwVRvDIYQaYxTzUWo453zF56N++G4TGAD/tHow7pRSxP4QxgIOxTmcUhJ3pnAPp3BD8eR7U5jjDdagU5ji9MxQFYworkGRCkbARy+qlxp+2gdh770Yvg0/6BM+XQbZxMM6IgAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teste de código épico' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="714, 904, 768, 104" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' parentid='thread-bottom' tag='DIV' /&gt;" Guid="517acf47-59fd-41d6-8394-f91630af58e9" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00d15281aa929b176d60e6c2a2a1763d.png" xmlns="">0TLUrl8HK5Uyd48BjC9N3PA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

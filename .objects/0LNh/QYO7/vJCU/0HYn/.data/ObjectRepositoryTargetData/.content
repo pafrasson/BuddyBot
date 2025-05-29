@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CH_E9ttLakCdAR8AXb1C_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/683878bd-6d08-8010-8f30-decc8193bc52" CVScreenId="73c5c525-a743-48c1-8658-f8b2d3ad98ea" CvElementArea="1302, 959, 44, 42" CvType="Icon" DesignTimeRectangle="1306, 962, 36, 36" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Iniciar modo voz' tag='BUTTON' /&gt;" Guid="1925dd9e-3963-4ca3-bed2-70442fed247a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVFhH1ZjBzYQgEIUtxQ7WJrzbi3fj1SpswAK82YEFeLEH72b+PBMMDigD6i7/S17issJ8AQaQJMsyitkJL4jNwYBFUVDTNNT3PU3TRMuy0Lqum/GMMvyHd/Aury+1N2BVVTSOI/kKdVCXt+eyGLAsy61X7gptoC3e/plFgF3X8Ti3hTZ5HJsvAfM8DxpOqdA2YvC4IkBUfGJIXUKMK8hTwDd7jguxePxLwDfmnEtnc9IARIb9SrbsNgC/Me/OhNic5wCIhfTX4ov5ATA0Meq6prZteXGQeMLsgNgvQzTPMyVJshnPT0jfu3dAbOohQs/ZAO/AgsUAxMkjRDbANE0NYB+BxQD0yV5AqeAcUB9yNS+HYTjUcUnP5h0QZziJkBAIjl6CJID8t0tgMQBx0JRIAcKQDyDqSgSW/wcoHWIF5DPEKmmkgNYh9k0STHz17AJUSSKVNUneWGZCZV1mnl6o78i6UIdudTrgU7JudXDUhwU4+uMW7JPNT8t5YIWjP/LDUX80KYcmTIh4YogAo/9wV5Bv9uStqw/db8zJsznHLQKEo75+0x3tBSZ3tFfA33bUgJ/Ph/4A2W2KTIJIF5QAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teste de código interno' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="73c5c525-a743-48c1-8658-f8b2d3ad98ea" CvTextArea="604, 925, 162, 19" CvTextArgument="Pergunte alguma coisa" CvType="Text" DesignTimeRectangle="604, 921, 728, 24" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="221609a9-02c9-4737-957a-f3aadc27dbe1" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="101c0029d35653a188adc96ecd2f3b50.png" xmlns="">0jMjbxFR6k0mz1YS5DM_16Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

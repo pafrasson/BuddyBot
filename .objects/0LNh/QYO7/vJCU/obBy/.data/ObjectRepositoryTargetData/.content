@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="z02Q4UErCUCS4noC2C41fQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/683878bd-6d08-8010-8f30-decc8193bc52" DesignTimeRectangle="1317, 973, 15, 14" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;div&amp;gt;svg&amp;gt;path' parentid='thread-bottom' tag='path' /&gt;" Guid="c592643b-2794-47f9-afba-350c98f534e8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Teste de código interno' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="bee6606fd00aa5683cdf67380f4ecefc.png" xmlns="">0T62xggnJxE21okSVf8cYhg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
