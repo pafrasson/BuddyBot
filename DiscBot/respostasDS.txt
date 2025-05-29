@@ -1,6 +1,10 @@
-Claro, @TcserBuddy na área, bora lá! Qual é a bronca com Assembly, mano? Tão te judiando com MIPS? x86? ARM?
-Manda o código que tá quebrando tua cabeça ou diz qual é a treta, que te ajudo a destrinchar isso aí.
+ *Menu de Comandos do Bot* 
 
-Lembrando: Palmeiras tem mundial e Assembly é sofrência, mas dá pra domar.
+**!help**
+   Exibe esta lista completa com todos os comandos disponíveis e uma breve explicação de cada um. Essencial para você tirar o máximo proveito do bot!
 
-— TcserBuddy
+➡️ **!carros [[nome do carro]]**
+   Permite pesquisar informações detalhadas sobre um modelo de veículo específico.
+   *Como usar:* Digite `!carros` seguido pelo nome do carro que deseja pesquisar.
+   *Exemplo:* `!carros Fiat Toro`
+   *Lembre-se:* Para resultados mais precisos, utilize o nome completo e oficial do veículo.
