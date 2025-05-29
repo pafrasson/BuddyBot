@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Não encontramos este te…(2)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Pr1cW0iZfEyckTm9ui-rLw",
+  "Reference": "qA2mmF-h5UOuwJmMtkU_yg/Pr1cW0iZfEyckTm9ui-rLw",
+  "ParentRef": "qA2mmF-h5UOuwJmMtkU_yg/Vi-sqYC0QEe9Fq-MyJURuA",
+  "Created": "2025-05-29T13:55:23.1998756Z",
+  "Updated": "2025-05-29T13:55:23.1998756Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WCYrhLu9wEiY7BHXyNjCjw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="webmotors.com.br" CVScreenId="54b36566-19cb-4d9b-ab44-8b51d0c3754d" CvTextArea="623, 595, 345, 10" CvTextArgument="NÖO encontramos este termo verifique a ortografia ou clique em Ver ofertas" CvType="Text" DesignTimeRectangle="612, 583, 463, 38" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='root' tag='DIV' /&gt;" Guid="32d44c49-ff64-4431-a96d-452f63b59566" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Webmotors | Compre, venda e financie carros usados, novos e motos' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="54b36566-19cb-4d9b-ab44-8b51d0c3754d" CvTextArea="623, 595, 345, 12" CvTextArgument="NÖO encontramos este termo verifique a ortografia ou clique em Ver ofertas" CvType="Text" DesignTimeRectangle="623, 595, 345, 12" ElementType="Text" Guid="6c85bdc6-a855-49e4-bb44-32e064568f3d" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="45ce587aace40b272b0abcbc975acdbd.png" xmlns="">0FyjbgrKJoUW9lB4THh-NsQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
