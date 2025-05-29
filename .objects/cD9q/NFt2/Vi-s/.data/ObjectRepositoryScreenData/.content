@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="utNvNH2HOkC7NneycN7qyg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="PUEpRF6LXU-mVapO9VnO-w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACTSURBVDhPrVPBCcAgDPThJ5uE7uWWDtIhgtAJLFdMsVYJJRVOibmcMZogxKFDFOIkxFmIixDXtsLGPvw3v9Ya+uBNiPcWtAL84L0EsHlMAmYA7xJRAaRlnTwC/KgCuNvlwOiJhp1UAAWaESw7q4BWeyRYdlGBB8EaA/+fDNw1cL+C+x+4f2IvYmWy7AXF927E5MEJaTo6tosb5M0AAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='Webmotors | Compre, venda e financie carros usados, novos e motos' /&gt;" Url="https://www.webmotors.com.br/" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="005738f55b358e8e3f60205f84417d29.jpg" xmlns="">0zNYx3nF1BEi1srmiG7hmcg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

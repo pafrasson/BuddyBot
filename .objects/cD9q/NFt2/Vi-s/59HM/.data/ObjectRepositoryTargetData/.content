@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bb7ceOAqWkyp_DB0lLbfTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="webmotors.com.br" CVScreenId="018e45d3-2f18-482f-b313-664f817a86cc" CvType="AnyWordGroup" DesignTimeRectangle="612, 583, 463, 38" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='root' tag='DIV' /&gt;" Guid="7dde3f0a-9a7d-4731-88f8-9af336286cee" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Webmotors | Compre, venda e financie carros usados, novos e motos' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="018e45d3-2f18-482f-b313-664f817a86cc" CvTextArea="645, 555, 106, 11" CvTextArgument="ford fiesta para nós" CvType="Text" DesignTimeRectangle="647, 541, 428, 40" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="4ef0d81b-b2c4-4c14-8eb6-65738d897292" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="01fb6b559aa7ffd82eae47af4348dad3.png" xmlns="">0y5LRyt70Yk6fXJJiXxJSbQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

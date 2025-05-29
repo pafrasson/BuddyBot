@@ -56,6 +56,7 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -121,9 +122,13 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1013,6936" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1013,7441" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="pos" />
+      <Variable x:TypeArguments="x:Int32" Name="pos">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="linhaAtual" />
       <Variable x:TypeArguments="sd:DataTable" Name="dadosBrutos" />
       <Variable x:TypeArguments="x:String" Name="strDadosFiltrados" />
@@ -134,7 +139,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="644,6913" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="644,7418" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dadosFiltrados" />
       </Sequence.Variables>
@@ -173,13 +178,13 @@
           <InArgument x:TypeArguments="x:String">[carroInput]</InArgument>
         </Assign.Value>
       </Assign>
-      <uix:NApplicationCard CloseMode="Always" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="610,6551" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="8e81d13e-8c0b-41dc-a45a-698316883e0a">
+      <uix:NApplicationCard CloseMode="Always" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="610,7056" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="8e81d13e-8c0b-41dc-a45a-698316883e0a">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="576,6302" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="576,6807" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="s:String[]" Name="partes" />
                 <Variable x:TypeArguments="x:String" Name="strDadosBrutos" />
@@ -204,6 +209,37 @@
                   </ui:Target>
                 </ui:TypeInto.Target>
               </ui:TypeInto>
+              <uix:NGetText DisplayName="Get Text 'Não encontramos este te…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="542,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8e81d13e-8c0b-41dc-a45a-698316883e0a" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="webmotors.com.br" CVScreenId="018e45d3-2f18-482f-b313-664f817a86cc" ContentHash="bb7ceOAqWkyp_DB0lLbfTA" CvType="AnyWordGroup" DesignTimeRectangle="612, 583, 463, 38" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='root' tag='DIV' /&gt;" Guid="7dde3f0a-9a7d-4731-88f8-9af336286cee" InformativeScreenshot="01fb6b559aa7ffd82eae47af4348dad3.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/59HMpKdbm0eSKkABtFWBOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Webmotors | Compre, venda e financie carros usados, novos e motos' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="018e45d3-2f18-482f-b313-664f817a86cc" CvTextArea="645, 555, 106, 11" CvTextArgument="ford fiesta para nós" CvType="Text" DesignTimeRectangle="647, 541, 428, 40" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="4ef0d81b-b2c4-4c14-8eb6-65738d897292" SearchSteps="Selector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <If sap:VirtualizedContainerService.HintSize="542,316" sap2010:WorkflowViewState.IdRef="If_3">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
               <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="542,189" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="tab" KeyModifiers="None" SpecialKey="True">
                 <ui:SendHotkey.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="875326d7-90ae-4175-91a2-be365eb26353" InformativeScreenshot="911b63ae5168914db2200cf8e6a11023" Selector="&lt;webctrl tag='INPUT' /&gt;">
@@ -696,7 +732,7 @@
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="PUEpRF6LXU-mVapO9VnO-w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACTSURBVDhPrVPBCcAgDPThJ5uE7uWWDtIhgtAJLFdMsVYJJRVOibmcMZogxKFDFOIkxFmIixDXtsLGPvw3v9Ya+uBNiPcWtAL84L0EsHlMAmYA7xJRAaRlnTwC/KgCuNvlwOiJhp1UAAWaESw7q4BWeyRYdlGBB8EaA/+fDNw1cL+C+x+4f2IvYmWy7AXF927E5MEJaTo6tosb5M0AAAAASUVORK5CYII=" InformativeScreenshot="005738f55b358e8e3f60205f84417d29.jpg" Selector="&lt;html app='chrome.exe' title='Webmotors | Compre, venda e financie carros usados, novos e motos' /&gt;" Url="https://www.webmotors.com.br/" Version="V2" />
+          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="utNvNH2HOkC7NneycN7qyg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACTSURBVDhPrVPBCcAgDPThJ5uE7uWWDtIhgtAJLFdMsVYJJRVOibmcMZogxKFDFOIkxFmIixDXtsLGPvw3v9Ya+uBNiPcWtAL84L0EsHlMAmYA7xJRAaRlnTwC/KgCuNvlwOiJhp1UAAWaESw7q4BWeyRYdlGBB8EaA/+fDNw1cL+C+x+4f2IvYmWy7AXF927E5MEJaTo6tosb5M0AAAAASUVORK5CYII=" InformativeScreenshot="005738f55b358e8e3f60205f84417d29.jpg" Reference="qA2mmF-h5UOuwJmMtkU_yg/Vi-sqYC0QEe9Fq-MyJURuA" Selector="&lt;html app='chrome.exe' title='Webmotors | Compre, venda e financie carros usados, novos e motos' /&gt;" Url="https://www.webmotors.com.br/" Version="V2" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
       <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:05" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="610,108" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Finalizando Bot&quot;]" />
