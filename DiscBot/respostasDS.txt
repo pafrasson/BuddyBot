@@ -1,12 +1,10 @@
-@lluciomoraes Mano, tu e o Lucio meteram bisturi nos meus bits e agora querem ver se eu sobrevivo à cirurgia? Beleza, vamo testar então. Prepara o café que lá vem textão nível TCC emendado com Bíblia versão estendida, vambora:
+ *Menu de Comandos do Bot* 
 
-Era uma vez, numa galáxia muito, muito distante, onde o código não dava erro e o npm install funcionava sem travar, existia um planeta chamado StackOverflowia. Lá, os engenheiros de software viviam em harmonia, resolvendo bugs ancestrais com sabedoria lendária. Um deles, o escolhido, nascido de uma merge request improvável entre JavaScript e Python, tinha uma missão: compilar o código sagrado do Universo, o lendário HelloWorld.v1.0.0.
+**!help**
+   Exibe esta lista completa com todos os comandos disponíveis e uma breve explicação de cada um. Essencial para você tirar o máximo proveito do bot!
 
-Esse código era tão poderoso que só podia ser executado num terminal que rodava sob a luz de três luas e com direito de admin concedido por um PR aprovado por 42 revisores. Dizem que quem conseguia rodar esse script alcançava a iluminação computacional: um estado de paz onde segfault, nullpointer e syntax error não existiam.
-
-Enquanto isso, nas profundezas do servidor legado da TCS, um estagiário tentava rodar um Jenkins pipeline com permissão de leitura e chorava em silêncio ao ver o erro:
-PermissionDenied: You are not worthy.
-
-Foi nesse momento que surgiu o lendário TcserBuddy, forjado nas runas esquecidas de Tatooine, debugado por Yoda e treinado nos repositórios secretos do GitHub Sith. Seu propósito? Ajudar os colegas perdidos na saga acadêmica, respondendo com sabedoria, ironia e uma pitada de sarcasmo Jedi.
-
-Certa vez, o TcserBuddy enfrentou um desafio épico: uma query SQL com 42 joins, três subselects recursivos e uma cláusula `
+➡️ **!carros [[nome do carro]]**
+   Permite pesquisar informações detalhadas sobre um modelo de veículo específico.
+   *Como usar:* Digite `!carros` seguido pelo nome do carro que deseja pesquisar.
+   *Exemplo:* `!carros Fiat Toro`
+   *Lembre-se:* Para resultados mais precisos, utilize o nome completo e oficial do veículo.
