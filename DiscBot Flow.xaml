@@ -71,7 +71,7 @@
       <AssemblyReference>fd1902021247.oTejJ4LSQZK1B9OhbzKoWE</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="DiscBot_Flow" sap:VirtualizedContainerService.HintSize="200,20" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="DiscBot_Flow" sap:VirtualizedContainerService.HintSize="1113,860.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -97,19 +97,19 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="502,986" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="3028c939-1fb4-47e9-b53d-24d4f7412fb8" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,872" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="3028c939-1fb4-47e9-b53d-24d4f7412fb8" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,746" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,632" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '﻿'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3028c939-1fb4-47e9-b53d-24d4f7412fb8" Text="BOT INICIALIZANDO! . . Ativando threads de uranio. . . " Version="V4">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '﻿'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3028c939-1fb4-47e9-b53d-24d4f7412fb8" Text="BOT INICIALIZANDO! . . Ativando threads de uranio. . . " Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="discord.com/channels/1373063259271335937/1374366562596950096" CVScreenId="19de0215-55ad-4440-ab97-2549c58a2318" ContentHash="8GNjEc0mB0egHrPV9kOmhA" CvTextArea="456, 980, 208, 18" CvTextArgument="Conversar em # &quot; amigo-tcs" CvType="Text" DesignTimeRectangle="456, 978, 1259, 22" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app-mount' tag='DIV' /&gt;" Guid="a2c79efe-780d-4b93-9257-38751d7be292" InformativeScreenshot="e4d0b2f70b6e1f86f60c6e47eba135f8.png" Reference="qA2mmF-h5UOuwJmMtkU_yg/MH4Nv7SEY0axqIDfe9NbgA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Discord | #??│amigo-tcs | TCSer - study &amp;amp; relax' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                       <uix:TargetAnchorable.Anchors>
@@ -130,7 +130,7 @@
                     </uix:VerifyExecutionTypeIntoOptions>
                   </uix:NTypeInto.VerifyOptions>
                 </uix:NTypeInto>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,169" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="416,169" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
                   <ui:SendHotkey.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="abf8e847-2bdc-45d7-be5c-204c1eeddf1e">
                       <ui:Target.TimeoutMS>
@@ -142,15 +142,7 @@
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
-                <Delay Duration="00:00:13" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[discGetDebug]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String" xml:space="preserve">BOT INICIALIZANDO! . . Aguarde, aquecendo neurônios. . . </InArgument>
-                  </Assign.Value>
-                </Assign>
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
               </Sequence>
             </ActivityAction>
           </uix:NApplicationCard.Body>
@@ -174,9 +166,9 @@
               <av:PointCollection x:Key="ConnectorLocation">595,300 565,300 565,365 650,365 650,335</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="discordAutoBot - Invoke Workflow File (DiscBot\discordAutoBot.xaml)" sap:VirtualizedContainerService.HintSize="337,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DiscBot\discordAutoBot.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="discordAutoBot - Invoke Workflow File (DiscBot\discordAutoBot.xaml)" sap:VirtualizedContainerService.HintSize="337,216" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DiscBot\discordAutoBot.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="argument1" />
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:InvokeWorkflowFile.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">

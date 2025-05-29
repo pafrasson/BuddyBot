@@ -1,10 +1,5 @@
- *Menu de Comandos do Bot* 
+@TcserBuddy
+Kkkkkk mano, se fosse só pegar assim fácil, metade da galera nem rodava nas matérias de cálculo.
+Mas já que tá no virtual, dá Ctrl+Z na vida real e volta o dado pro alto. 😎🎲
 
-**!help**
-   Exibe esta lista completa com todos os comandos disponíveis e uma breve explicação de cada um. Essencial para você tirar o máximo proveito do bot!
-
-➡️ **!carros [[nome do carro]]**
-   Permite pesquisar informações detalhadas sobre um modelo de veículo específico.
-   *Como usar:* Digite `!carros` seguido pelo nome do carro que deseja pesquisar.
-   *Exemplo:* `!carros Fiat Toro`
-   *Lembre-se:* Para resultados mais precisos, utilize o nome completo e oficial do veículo.
+Você gosta desta personalidade?
