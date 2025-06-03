@@ -115,13 +115,13 @@
       <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ZapImoveis" sap:VirtualizedContainerService.HintSize="1252,1740" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ZapImoveis" sap:VirtualizedContainerService.HintSize="1087,1567" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Search at ZapImoveis" sap:VirtualizedContainerService.HintSize="538,1717" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Search at ZapImoveis" sap:VirtualizedContainerService.HintSize="538,1544" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="InputEndereco" />
         <Variable x:TypeArguments="x:String" Name="InputComprarouAlugar" />
@@ -148,13 +148,12 @@
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[imovelInput]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[inputUser.Split({&quot;!zapimoveis&quot;}, StringSplitOptions.None)(1).ToString.Trim]" />
       <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_10">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[InputEndereco]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[inputUser.Split({"!zapimoveis"}, StringSplitOptions.None)(1).ToString.Trim]</InArgument>
+          <InArgument x:TypeArguments="x:String">[inputUser.Split({"!zapimoveis"}, StringSplitOptions.None)(1).Split(","c)(0).Trim]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_6">
