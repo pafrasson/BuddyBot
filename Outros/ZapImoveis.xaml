@@ -1,4 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ZapImoveis" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ZapImoveis_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ZapImoveis" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="imovelInput" Type="InOutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ZapImoveis_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -105,47 +112,51 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ZapImoveis" sap:VirtualizedContainerService.HintSize="1095,1664" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ZapImoveis" sap:VirtualizedContainerService.HintSize="1087,1360" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Search at ZapImoveis" sap:VirtualizedContainerService.HintSize="538,1641" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Search at ZapImoveis" sap:VirtualizedContainerService.HintSize="538,1337" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="InputEndereco" />
         <Variable x:TypeArguments="x:String" Name="InputComprarouAlugar" />
         <Variable x:TypeArguments="sd:DataTable" Name="ZapImoveisDataTable" />
+        <Variable x:TypeArguments="x:String" Name="InputUser" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="504,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Onde deseja morar? Digite nome da rua, bairro e cidade" Title="Property Search">
-        <ui:InputDialog.Result>
+      <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[InputUser]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[imovelInput]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
           <OutArgument x:TypeArguments="x:String">[InputEndereco]</OutArgument>
-        </ui:InputDialog.Result>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:InputDialog>
-      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="504,324" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Deseja comprar ou alugar?" OptionsString="Comprar;Alugar" Title="Property Search">
-        <ui:InputDialog.Result>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[InputUser.Split({"!zapimoveis"}, StringSplitOptions.None)(1).ToString.Trim]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
           <OutArgument x:TypeArguments="x:String">[InputComprarouAlugar]</OutArgument>
-        </ui:InputDialog.Result>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:InputDialog>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[InputUser.Split(","c).Last.ToString.Trim]</InArgument>
+        </Assign.Value>
+      </Assign>
       <Sequence DisplayName="Search e Data Scrap" sap:VirtualizedContainerService.HintSize="504,140" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -378,7 +389,7 @@
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
-      <Sequence DisplayName="Filter n Show to user" sap:VirtualizedContainerService.HintSize="504,823" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence DisplayName="Filter n Show to user" sap:VirtualizedContainerService.HintSize="504,772" sap2010:WorkflowViewState.IdRef="Sequence_9">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="resultadoTexto" />
           <Variable x:TypeArguments="sd:DataTable" Name="FilteredDtTable" />
@@ -388,7 +399,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <If Condition="[(From row In ZapImoveisDataTable.AsEnumerable()&#xD;&#xA; Where Not String.IsNullOrEmpty(row(&quot;Preço&quot;).ToString)&#xD;&#xA; Order By (row(&quot;Preço&quot;)) Ascending).Take(3).Count &gt; 0]" sap:VirtualizedContainerService.HintSize="470,584" sap2010:WorkflowViewState.IdRef="If_1">
+        <If Condition="[(From row In ZapImoveisDataTable.AsEnumerable()&#xA; Where Not String.IsNullOrEmpty(row(&quot;Preço&quot;).ToString)&#xA; Order By (row(&quot;Preço&quot;)) Ascending).Take(3).Count &gt; 0]" sap:VirtualizedContainerService.HintSize="470,584" sap2010:WorkflowViewState.IdRef="If_1">
           <If.Then>
             <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,281" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
@@ -436,7 +447,14 @@
             </Sequence>
           </If.Else>
         </If>
-        <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="test.txt" sap:VirtualizedContainerService.HintSize="470,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[resultadoTexto]" />
+        <Assign sap:VirtualizedContainerService.HintSize="470,105" sap2010:WorkflowViewState.IdRef="Assign_9">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[imovelInput]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[resultadoTexto]</InArgument>
+          </Assign.Value>
+        </Assign>
       </Sequence>
     </Sequence>
   </Sequence>
