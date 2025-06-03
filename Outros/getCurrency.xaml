@@ -1,4 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="getCurrecy" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="getCurrecy_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="getCurrecy" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="currencyInput" Type="InOutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>getCurrecy_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -99,27 +106,47 @@
       <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="getCurrency" sap:VirtualizedContainerService.HintSize="1101,553.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="getCurrency" sap:VirtualizedContainerService.HintSize="1087,1067" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="468,529" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="468,1044" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="HttpResponseContent" />
         <Variable x:TypeArguments="x:String" Name="currencyGot" />
         <Variable x:TypeArguments="njl:JObject" Name="DeserializedJsonObject" />
         <Variable x:TypeArguments="x:String" Name="respostaDSCurrency" />
+        <Variable x:TypeArguments="x:String" Name="inputUser" />
+        <Variable x:TypeArguments="x:String" Name="selectedCurrency" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://v6.exchangerate-api.com/v6/5490389dd8c460b3bef0a83a/pair/USD/BRL" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[HttpResponseContent]" TimeoutMS="6000">
+      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[inputUser]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[currencyInput]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[selectedCurrency]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[inputUser.Split({"!currency"}, StringSplitOptions.None)(1).Trim]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;https://v6.exchangerate-api.com/v6/5490389dd8c460b3bef0a83a/pair/&quot;+selectedCurrency+&quot;/BRL&quot;]" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[HttpResponseContent]" TimeoutMS="6000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -137,15 +164,24 @@
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
       <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[DeserializedJsonObject]" JsonSample="HttpsResponseContent" JsonString="[HttpResponseContent]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[HttpResponseContent]" />
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[respostaDSCurrency]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">["O valor de USD é: " + DeserializedJsonObject("conversion_rate").ToString]</InArgument>
+          <InArgument x:TypeArguments="x:String">["O valor de "+selectedCurrency+" é: " + DeserializedJsonObject("conversion_rate").ToString]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[respostaDSCurrency]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[respostaDSCurrency]" />
+      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[currencyInput]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[respostaDSCurrency]</InArgument>
+        </Assign.Value>
+      </Assign>
     </Sequence>
   </Sequence>
 </Activity>

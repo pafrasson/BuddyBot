@@ -28,6 +28,18 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "inputCurrency",
+      "DisplayName": "inputCurrency",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }
