@@ -4,6 +4,7 @@
   "description": "Processo em Branco",
   "main": "DiscBot Flow.xaml",
   "dependencies": {
+    "animeBiblioteca": "[1.0.5]",
     "UiPath.Excel.Activities": "[3.0.1]",
     "UiPath.IntegrationService.Activities": "[1.15.0]",
     "UiPath.System.Activities": "[25.4.3]",
